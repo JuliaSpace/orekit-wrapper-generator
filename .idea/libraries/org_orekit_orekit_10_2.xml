@@ -1,0 +1,35 @@
+<component name="libraryTable">
+  <library name="org.orekit:orekit:10.2" type="repository">
+    <properties maven-id="org.orekit:orekit:10.2" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/orekit/orekit/10.2/orekit-10.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hipparchus/hipparchus-core/1.7/hipparchus-core-1.7.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hipparchus/hipparchus-geometry/1.7/hipparchus-geometry-1.7.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hipparchus/hipparchus-ode/1.7/hipparchus-ode-1.7.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hipparchus/hipparchus-fitting/1.7/hipparchus-fitting-1.7.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hipparchus/hipparchus-optim/1.7/hipparchus-optim-1.7.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hipparchus/hipparchus-filtering/1.7/hipparchus-filtering-1.7.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hipparchus/hipparchus-stat/1.7/hipparchus-stat-1.7.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/orekit/orekit/10.2/orekit-10.2-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hipparchus/hipparchus-core/1.7/hipparchus-core-1.7-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hipparchus/hipparchus-geometry/1.7/hipparchus-geometry-1.7-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hipparchus/hipparchus-ode/1.7/hipparchus-ode-1.7-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hipparchus/hipparchus-fitting/1.7/hipparchus-fitting-1.7-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hipparchus/hipparchus-optim/1.7/hipparchus-optim-1.7-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hipparchus/hipparchus-filtering/1.7/hipparchus-filtering-1.7-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hipparchus/hipparchus-stat/1.7/hipparchus-stat-1.7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/orekit/orekit/10.2/orekit-10.2-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hipparchus/hipparchus-core/1.7/hipparchus-core-1.7-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hipparchus/hipparchus-geometry/1.7/hipparchus-geometry-1.7-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hipparchus/hipparchus-ode/1.7/hipparchus-ode-1.7-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hipparchus/hipparchus-fitting/1.7/hipparchus-fitting-1.7-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hipparchus/hipparchus-optim/1.7/hipparchus-optim-1.7-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hipparchus/hipparchus-filtering/1.7/hipparchus-filtering-1.7-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hipparchus/hipparchus-stat/1.7/hipparchus-stat-1.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
