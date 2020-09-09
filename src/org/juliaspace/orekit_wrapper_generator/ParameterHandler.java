@@ -2,6 +2,7 @@ package org.juliaspace.orekit_wrapper_generator;
 
 import com.google.common.base.Joiner;
 
+import java.lang.reflect.Modifier;
 import java.lang.reflect.Parameter;
 import java.util.*;
 
@@ -32,11 +33,23 @@ public class ParameterHandler {
         Map<String, String> params = new LinkedHashMap<>();
         for (Parameter parameter : parameters) {
             Class<?> type = parameter.getType();
+            String name = type.getSimpleName();
             boolean imported = imports.containsKey(type.getSimpleName());
-            if (!imported && isNotPrimitive(type)) {
+            if (type.isArray()) {
+                Class<?> eltype = type.getComponentType();
+                if (!imports.containsKey(eltype.getSimpleName()) && isNotPrimitive(eltype)) {
+                    newImports.put(eltype.getSimpleName(), eltype.getName());
+                }
+            } else if (type.getEnclosingClass() != null && Modifier.isStatic(type.getModifiers())) {
+                String parentName = type.getEnclosingClass().getSimpleName();
+                name = parentName + "_" + name;
+                if (!imports.containsKey(name)) {
+                    newImports.put(name, type.getName());
+                }
+            } else if (!imported && isNotPrimitive(type)) {
                 newImports.put(type.getSimpleName(), type.getName());
             }
-            String typeName = translateName(type.getSimpleName());
+            String typeName = translateName(name);
             params.put(parameter.getName(), typeName);
         }
         Joiner.MapJoiner sigJoiner = Joiner.on(", ").withKeyValueSeparator("::");
@@ -63,6 +76,7 @@ public class ParameterHandler {
             case "float" -> "jfloat";
             case "double" -> "jdouble";
             case "String" -> "JString";
+            case "Complex" -> "JComplex";
             default -> in;
         };
     }
