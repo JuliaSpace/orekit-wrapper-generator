@@ -9,7 +9,7 @@ import java.lang.reflect.Parameter;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class JuliaMethod {
+public class JuliaMethod implements Comparable<JuliaMethod> {
     private final String body;
     private final List<String> imports = new ArrayList<>();
     private final String name;
@@ -97,5 +97,10 @@ public class JuliaMethod {
 
     public String getName() {
         return name;
+    }
+
+    @Override
+    public int compareTo(JuliaMethod o) {
+        return body.compareTo(o.getBody());
     }
 }

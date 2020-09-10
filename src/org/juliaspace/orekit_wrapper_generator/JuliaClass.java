@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 public class JuliaClass implements Comparable<JuliaClass> {
 
     private final String name;
-    private final List<JuliaMethod> methods = new ArrayList<>();
+    private final Set<JuliaMethod> methods = new TreeSet<>();
     private final Set<String> imports = new TreeSet<>();
     private final Set<String> exports = new TreeSet<>();
 
